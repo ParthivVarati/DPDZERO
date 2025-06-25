@@ -113,11 +113,6 @@ python test_services.py
 - Modular Dockerfile structure for each service
 - Healthchecks and Python-based test script
 
-
-
-- Upload this project to GitHub or GitLab
-- Submit the repo link here: https://forms.gle/6LmZR5b2HsfDJLXS6
-
 ---
 
-> ✅ Everything is Dockerized, reverse-proxied, and tested — ready for submission!
+
