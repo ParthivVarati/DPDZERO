@@ -1,4 +1,4 @@
-# 🚀 DevOps Intern Assignment – Docker + Nginx Reverse Proxy
+# DevOps Intern Assignment – Docker + Nginx Reverse Proxy
 
 This project sets up a **Docker Compose-based system** with:
 
@@ -8,7 +8,7 @@ This project sets up a **Docker Compose-based system** with:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -29,19 +29,19 @@ This project sets up a **Docker Compose-based system** with:
 
 ---
 
-## ✅ Features
+## Features
 
-- 🐳 All services containerized using Docker
-- 🔁 NGINX reverse proxy routes:
+- All services containerized using Docker
+- NGINX reverse proxy routes:
   - `/service1` → Golang service (port `8001`)
   - `/service2` → Flask service (port `8002`)
-- 📜 NGINX logs timestamped requests
-- ❤️ Healthchecks for both services
-- 🧪 Test script to verify service availability
+- NGINX logs timestamped requests
+- Healthchecks for both services
+- Test script to verify service availability
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 1. Clone the repo or copy the project files.
 
@@ -61,7 +61,7 @@ This project sets up a **Docker Compose-based system** with:
 
 ---
 
-## 📌 Routing Logic (via NGINX)
+## Routing Logic (via NGINX)
 
 Requests go through `nginx_proxy`:
 
@@ -74,11 +74,11 @@ Configured in `nginx/nginx.conf`.
 
 ---
 
-## 🩺 Healthchecks
+## Healthchecks
 
 Included in `docker-compose.yml`:
 
-```yaml
+```yal
 healthcheck:
   test: ["CMD", "curl", "-f", "http://localhost:8001/ping"]
   interval: 30s
@@ -90,7 +90,7 @@ NGINX waits for services to be healthy before starting.
 
 ---
 
-## 🧪 Test Script
+## Test Script
 
 Run this script to check both services:
 
@@ -107,15 +107,13 @@ python test_services.py
 
 ---
 
-## 🌟 Bonus Implemented
+## Bonus Implemented
 
-- ✅ Clear NGINX access logs with timestamps
-- ✅ Modular Dockerfile structure for each service
-- ✅ Healthchecks and Python-based test script
+- Clear NGINX access logs with timestamps
+- Modular Dockerfile structure for each service
+- Healthchecks and Python-based test script
 
----
 
-## 📬 Submission
 
 - Upload this project to GitHub or GitLab
 - Submit the repo link here: https://forms.gle/6LmZR5b2HsfDJLXS6
